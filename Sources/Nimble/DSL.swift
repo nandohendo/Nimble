@@ -1,5 +1,6 @@
 /// Make an ``Expectation`` on a given actual value. The value given is lazily evaluated.
 public func expect<T>(file: FileString = #file, line: UInt = #line, _ expression: @autoclosure @escaping () throws -> T?) -> SyncExpectation<T> {
+    ExpectFlag.shared.hasExpect = true
     return SyncExpectation(
         expression: Expression(
             expression: expression,
@@ -9,6 +10,7 @@ public func expect<T>(file: FileString = #file, line: UInt = #line, _ expression
 
 /// Make an ``Expectation`` on a given actual value. The closure is lazily invoked.
 public func expect<T>(file: FileString = #file, line: UInt = #line, _ expression: @autoclosure () -> (() throws -> T)) -> SyncExpectation<T> {
+    ExpectFlag.shared.hasExpect = true
     return SyncExpectation(
         expression: Expression(
             expression: expression(),
@@ -18,6 +20,7 @@ public func expect<T>(file: FileString = #file, line: UInt = #line, _ expression
 
 /// Make an ``Expectation`` on a given actual value. The closure is lazily invoked.
 public func expect<T>(file: FileString = #file, line: UInt = #line, _ expression: @autoclosure () -> (() throws -> T?)) -> SyncExpectation<T> {
+    ExpectFlag.shared.hasExpect = true
     return SyncExpectation(
         expression: Expression(
             expression: expression(),
@@ -27,6 +30,7 @@ public func expect<T>(file: FileString = #file, line: UInt = #line, _ expression
 
 /// Make an ``Expectation`` on a given actual value. The closure is lazily invoked.
 public func expect(file: FileString = #file, line: UInt = #line, _ expression: @autoclosure () -> (() throws -> Void)) -> SyncExpectation<Void> {
+    ExpectFlag.shared.hasExpect = true
     return SyncExpectation(
         expression: Expression(
             expression: expression(),

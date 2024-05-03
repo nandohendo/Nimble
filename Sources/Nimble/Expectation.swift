@@ -191,8 +191,6 @@ public struct SyncExpectation<Value>: Expectation {
         let handler = NimbleEnvironment.activeInstance.assertionHandler
         handler.assert(pass, message: message, location: expression.location)
         
-        ExpectFlag.shared.hasExpect = true
-
         return .init(expression: expression, status: status.applying(pass ? .passed : .failed))
     }
 

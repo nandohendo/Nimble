@@ -190,6 +190,8 @@ public struct SyncExpectation<Value>: Expectation {
     public func verify(_ pass: Bool, _ message: FailureMessage) -> Self {
         let handler = NimbleEnvironment.activeInstance.assertionHandler
         handler.assert(pass, message: message, location: expression.location)
+        
+        ExpectFlag.shared.hasExpect = true
 
         return .init(expression: expression, status: status.applying(pass ? .passed : .failed))
     }

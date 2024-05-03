@@ -284,6 +284,10 @@
 		472FD13B1B9E0CFE00C7B8DA /* HaveCountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472FD1361B9E094B00C7B8DA /* HaveCountTest.swift */; };
 		4793854D1BA0BB2500296F85 /* ObjCHaveCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4793854C1BA0BB2500296F85 /* ObjCHaveCountTest.m */; };
 		4793854E1BA0BB2500296F85 /* ObjCHaveCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4793854C1BA0BB2500296F85 /* ObjCHaveCountTest.m */; };
+		589197DF2BE4F1BF00C6421B /* ExpectFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589197DE2BE4F1BF00C6421B /* ExpectFlag.swift */; };
+		589197E02BE4F1BF00C6421B /* ExpectFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589197DE2BE4F1BF00C6421B /* ExpectFlag.swift */; };
+		589197E12BE4F1BF00C6421B /* ExpectFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589197DE2BE4F1BF00C6421B /* ExpectFlag.swift */; };
+		589197E22BE4F1BF00C6421B /* ExpectFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589197DE2BE4F1BF00C6421B /* ExpectFlag.swift */; };
 		62FB326223B78BF90047BED9 /* BeginWithPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB326123B78BF90047BED9 /* BeginWithPrefix.swift */; };
 		62FB326323B78BF90047BED9 /* BeginWithPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB326123B78BF90047BED9 /* BeginWithPrefix.swift */; };
 		62FB326423B78BF90047BED9 /* BeginWithPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FB326123B78BF90047BED9 /* BeginWithPrefix.swift */; };
@@ -755,6 +759,7 @@
 		472FD1341B9E085700C7B8DA /* HaveCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveCount.swift; sourceTree = "<group>"; };
 		472FD1361B9E094B00C7B8DA /* HaveCountTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaveCountTest.swift; sourceTree = "<group>"; };
 		4793854C1BA0BB2500296F85 /* ObjCHaveCountTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCHaveCountTest.m; sourceTree = "<group>"; };
+		589197DE2BE4F1BF00C6421B /* ExpectFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectFlag.swift; sourceTree = "<group>"; };
 		62FB326123B78BF90047BED9 /* BeginWithPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginWithPrefix.swift; sourceTree = "<group>"; };
 		62FB326523B78D4A0047BED9 /* BeginWithPrefixTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginWithPrefixTest.swift; sourceTree = "<group>"; };
 		6CAEDD091CAEA86F003F1584 /* LinuxSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxSupport.swift; sourceTree = "<group>"; };
@@ -959,6 +964,7 @@
 				1FD8CD0C1968AB07008ED995 /* Matchers */,
 				1F1A742E1940169200FFFC47 /* Nimble.h */,
 				1FD8CD241968AB07008ED995 /* Utils */,
+				589197DE2BE4F1BF00C6421B /* ExpectFlag.swift */,
 			);
 			name = Nimble;
 			path = Sources/Nimble;
@@ -1629,6 +1635,7 @@
 				1F1871C61CA89EDB00A34BF2 /* DSL.m in Sources */,
 				89F5E092290B9D5C001F9377 /* AssertionRecorder+Async.swift in Sources */,
 				1FD8CD301968AB07008ED995 /* AdapterProtocols.swift in Sources */,
+				589197E02BE4F1BF00C6421B /* ExpectFlag.swift in Sources */,
 				AE7ADE451C80BF8000B94CD3 /* MatchError.swift in Sources */,
 				1FC494AA1C29CBA40010975C /* NimbleEnvironment.swift in Sources */,
 				CDD80B841F20307A0002CD65 /* MatcherProtocols.swift in Sources */,
@@ -1762,6 +1769,7 @@
 				1F1871E81CA8A18400A34BF2 /* Polling.swift in Sources */,
 				1F5DF18A1BDCA0F500C3A531 /* ThrowError.swift in Sources */,
 				89F5E08E290B8D22001F9377 /* AsyncAwait.swift in Sources */,
+				589197E12BE4F1BF00C6421B /* ExpectFlag.swift in Sources */,
 				1F5DF1891BDCA0F500C3A531 /* RaisesException.swift in Sources */,
 				1F5DF1761BDCA0F500C3A531 /* AllPass.swift in Sources */,
 				AE4BA9AF1C88DDB500B73906 /* Errors.swift in Sources */,
@@ -1936,6 +1944,7 @@
 				1FD8CD311968AB07008ED995 /* AdapterProtocols.swift in Sources */,
 				89F5E091290B9D5C001F9377 /* AssertionRecorder+Async.swift in Sources */,
 				1F1871D21CA89EEE00A34BF2 /* DSL.m in Sources */,
+				589197DF2BE4F1BF00C6421B /* ExpectFlag.swift in Sources */,
 				AE7ADE461C80BF8000B94CD3 /* MatchError.swift in Sources */,
 				1FC494AB1C29CBA40010975C /* NimbleEnvironment.swift in Sources */,
 				1FD8CD5F1968AB07008ED995 /* RaisesException.swift in Sources */,
@@ -2069,6 +2078,7 @@
 				D95F8973267EA20A004B1B4D /* Predicate.swift in Sources */,
 				D95F8976267EA20A004B1B4D /* BeGreaterThanOrEqualTo.swift in Sources */,
 				89F5E08F290B8D22001F9377 /* AsyncAwait.swift in Sources */,
+				589197E22BE4F1BF00C6421B /* ExpectFlag.swift in Sources */,
 				D95F8958267EA1F7004B1B4D /* AssertionRecorder.swift in Sources */,
 				D95F897E267EA20A004B1B4D /* BeWithin.swift in Sources */,
 				D95F8928267EA1CA004B1B4D /* NMBExceptionCapture.m in Sources */,
